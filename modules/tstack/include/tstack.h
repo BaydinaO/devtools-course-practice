@@ -1,7 +1,7 @@
-// Copyright 2016 Baydina Olya
+// Copyright 2016 Michael Murashov
 
-#ifndef MODULES_BAYDINA_OLYA_TSTACK_INCLUDE_TSTACK_H_
-#define MODULES_BAYDINA_OLYA_TSTACK_INCLUDE_TSTACK_H_
+#ifndef MODULES_TSTACK_INCLUDE_TSTACK_H_ 
+#define MODULES_TSTACK_INCLUDE_TSTACK_H_ 
 
 #include <iostream>
 
@@ -287,4 +287,4 @@ void swap_st(Stack<V>* st_1, Stack<V>* st_2) {
     }
 }
 
-#endif  // MODULES_BAYDINA_OLYA_TSTACK_INCLUDE_TSTACK_H_
+#endif  // MODULES_TSTACK_INCLUDE_TSTACK_H_ 
