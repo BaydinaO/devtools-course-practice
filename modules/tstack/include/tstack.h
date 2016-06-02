@@ -287,4 +287,5 @@ void swap_st(Stack<V>* st_1, Stack<V>* st_2) {
     }
 }
 
-#endif  // MODULES_TSTACK_INCLUDE_TSTACK_H_ 
+#endif  // MODULES_TSTACK_INCLUDE_TSTACK_H_
+
