@@ -43,7 +43,7 @@ add_test(
     NAME ${prefix}_can_Push
     COMMAND ${APPLICATION} push 3
 )
-set_tests_properties (${prefix}_can_Add_Complexs
+set_tests_properties (${prefix}_can_Push
   PROPERTIES PASS_REGULAR_EXPRESSION "element pushed")
 
 
