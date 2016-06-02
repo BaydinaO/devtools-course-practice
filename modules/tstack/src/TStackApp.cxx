@@ -1,8 +1,8 @@
 // Copyright 2016 Baydina Olya
 
 
-#include "include/tstack.h"
 #include "include/TStackApp.h"
+#include "include/tstack.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,7 +19,7 @@ void TStackApp::help(const char* appname, const char* message) {
         "This is a stack application.\n\n" +
         "Please provide arguments in the following format:\n\n" +
 
-        "  $ " + appname + " <operation> <element if push>\n\n " + 
+        "  $ " + appname + " <operation> <element if push>\n\n " +
 
         "Where element is int-precision number, " +
         "and <operation> is one of 'push', 'pop', 'length'.\n";
@@ -29,8 +29,7 @@ bool TStackApp::validateNumberOfArguments(int argc, const char** argv) {
     if (argc == 1) {
         help(argv[0]);
         return false;
-    }
-    else if (argc > 3) {
+    } else if (argc > 3) {
         help(argv[0], "ERROR: Should be 2 or 3 arguments.\n\n");
         return false;
     }
@@ -49,18 +48,14 @@ double parseInt(const char* arg) {
 }
 
 int parseOperation(const char* arg) {
-    int op=0;
+    int op = 0;
     if (strcmp(arg, "push") == 0) {
         op = 1;
-    }
-    else if (strcmp(arg, "pop") == 0) {
+    } else if (strcmp(arg, "pop") == 0) {
         op = 2;
-    }
-    else if (strcmp(arg, "length") == 0) {
+    } else if (strcmp(arg, "length") == 0) {
         op = 3;
-    }
-
-    else {
+    } else {
         throw std::string("Wrong operation format!");
     }
     return op;
@@ -73,9 +68,8 @@ std::string TStackApp::operator()(int argc, const char** argv) {
         return message_;
     }
     try {
-	
         args.operation = parseOperation(argv[1]);
-        if (args.operation == 1){
+        if (args.operation == 1) {
             args.element = parseInt(argv[2]);
         }
     }
@@ -84,7 +78,7 @@ std::string TStackApp::operator()(int argc, const char** argv) {
     }
 
     Stack<int> stack;
-	
+
     std::ostringstream stream;
     switch (args.operation) {
     case 1:
