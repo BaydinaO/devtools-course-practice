@@ -1,8 +1,6 @@
 // Copyright 2016 Baydina Olya
 
-
 #include "include/TStackApp.h"
-#include "include/tstack.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,6 +8,8 @@
 #include <string.h>
 #include <string>
 #include <sstream>
+
+#include "include/tstack.h"
 
 TStackApp::TStackApp() : message_("") {}
 
