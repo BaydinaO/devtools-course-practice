@@ -1,7 +1,7 @@
 // Copyright 2016 Michael Murashov
 
-#ifndef MODULES_TSTACK_INCLUDE_TSTACK_H_ 
-#define MODULES_TSTACK_INCLUDE_TSTACK_H_ 
+#ifndef MODULES_TSTACK_INCLUDE_TSTACK_H_
+#define MODULES_TSTACK_INCLUDE_TSTACK_H_
 
 #include <iostream>
 
