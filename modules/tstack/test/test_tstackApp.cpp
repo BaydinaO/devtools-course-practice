@@ -83,7 +83,7 @@ TEST_F(TStackAppTest, Can_Push) {
 }
 
 
-TEST_F(TStackAppTest, Can_Pop){
+TEST_F(TStackAppTest, Can_Pop) {
     vector<string> args = { "push", "3" };
     vector<string> args1 = { "pop", "3" };
 
@@ -94,7 +94,7 @@ TEST_F(TStackAppTest, Can_Pop){
     Assert("element = 3*");
 }
 
-TEST_F(TStackAppTest, Can_GetSize){
+TEST_F(TStackAppTest, Can_GetSize) {
     vector<string> args = { "push", "3" };
     vector<string> args1 = { "length" };
 
