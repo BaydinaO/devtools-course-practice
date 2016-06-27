@@ -71,7 +71,7 @@ TEST_F(TStackAppTest, Can_Detect_Wrong_Operation_Format) {
 
     Act(args);
 
-    Assert("Wrong operation format!");
+    Assert("Wrong operation format!*");
 }
 
 TEST_F(TStackAppTest, Can_Push) {
@@ -79,5 +79,29 @@ TEST_F(TStackAppTest, Can_Push) {
 
     Act(args);
 
-    Assert("element pushed");
+    Assert("element pushed*");
 }
+
+
+TEST_F(TStackAppTest, Can_Pop){
+    vector<string> args = { "push", "3" };
+    vector<string> args1 = { "pop", "3" };
+
+    Act(args);
+    Assert("element pushed*");
+    Act(args1);
+
+    Assert("element = 3*");
+}
+
+TEST_F(TStackAppTest, Can_GetSize){
+    vector<string> args = { "push", "3" };
+    vector<string> args1 = { "length" };
+
+    Act(args);
+    Assert("element pushed*");
+    Act(args1);
+
+    Assert("length = 1*");
+}
+
